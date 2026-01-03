@@ -1,0 +1,47 @@
+/* GLOBAL STYLES */
+:root {
+  --tanishq-red: #4d1519;
+  --light-grey: #f9f9f9;
+}
+
+body { margin: 0; font-family: 'Montserrat', sans-serif; background: #fff; }
+
+/* HEADER */
+.main-header { padding: 15px 5%; background: #fff; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #eee; }
+.header-container { display: flex; align-items: center; justify-content: space-between; }
+.brand-logo { color: var(--tanishq-red); font-family: serif; letter-spacing: 4px; margin: 0; }
+
+.search-bar { display: flex; align-items: center; background: #fcfcfc; border: 1px solid #ddd; border-radius: 25px; padding: 8px 20px; width: 450px; }
+.search-bar input { border: none; background: transparent; width: 100%; outline: none; padding: 0 10px; }
+.search-utils { display: flex; gap: 10px; color: #888; }
+
+.icon-group { display: flex; gap: 20px; color: var(--tanishq-red); text-align: center; }
+.icon-item p { font-size: 10px; margin: 2px 0; font-weight: bold; }
+
+/* NAV */
+.category-nav { display: flex; justify-content: center; gap: 30px; padding: 15px; border-bottom: 1px solid #eee; font-size: 13px; font-weight: 500; }
+
+/* HERO */
+.hero-slider { height: 400px; background: #2c3e2d; margin: 20px 5%; border-radius: 10px; display: flex; align-items: center; padding: 0 60px; color: white; }
+.hero-content h2 { font-size: 3rem; margin: 0; }
+.shop-now-btn { margin-top: 20px; padding: 12px 35px; background: #ccc; border: none; cursor: pointer; }
+
+/* CATEGORIES */
+.category-section { padding: 50px 5%; text-align: center; }
+.category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.cat-img-box { border-radius: 15px; overflow: hidden; background: #fdf5f0; margin-bottom: 15px; }
+.cat-img-box img { width: 100%; transition: 0.3s; }
+.category-card:hover img { transform: scale(1.1); }
+
+/* EXPERIENCE SECTION */
+.experience-section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; padding: 50px 5%; }
+.exp-card { text-align: center; }
+.exp-card img { width: 100%; height: 250px; object-fit: cover; }
+.exp-card p { font-weight: 500; letter-spacing: 1px; margin-top: 15px; }
+
+/* FOOTER */
+.main-footer { background: #350c10; color: white; padding: 60px 5% 20px; }
+.footer-content { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 40px; }
+.footer-column ul { list-style: none; padding: 0; line-height: 2; font-size: 14px; }
+.qr-placeholder { background: white; color: black; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; margin-top: 10px; }
+.footer-bottom { border-top: 1px solid #555; padding-top: 20px; font-size: 12px; text-align: center; }
